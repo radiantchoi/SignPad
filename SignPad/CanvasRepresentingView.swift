@@ -21,7 +21,7 @@ struct CanvasRepresentingView: UIViewRepresentable {
         canvas.tool = changeTool()
     }
     
-    func changeTool() -> PKTool {
+    private func changeTool() -> PKTool {
         return isUsingMarker
         ? PKInkingTool(.marker, color: .black, width: 30)
         : PKEraserTool(.bitmap, width: 50)
