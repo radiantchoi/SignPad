@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isUsingMarker = true
+    
     var body: some View {
         NavigationStack {
-            CanvasRepresentingView()
+            CanvasRepresentingView(isUsingMarker: $isUsingMarker)
                 .padding()
                 .navigationTitle("사인해주세요!")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(isUsingMarker ? "지우개" : "마커") {
+                            isUsingMarker.toggle()
+                        }
+                    }
+                }
         }
     }
 }

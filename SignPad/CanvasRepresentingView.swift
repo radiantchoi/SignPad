@@ -9,14 +9,21 @@ import PencilKit
 import SwiftUI
 
 struct CanvasRepresentingView: UIViewRepresentable {
+    @Binding var isUsingMarker: Bool
     
     func makeUIView(context: Context) -> PKCanvasView {
         let canvas = PKCanvasView()
-        canvas.tool = PKInkingTool(.marker, color: .black, width: 30)
+        canvas.tool = changeTool()
         return canvas
     }
     
-    func updateUIView(_ uiView: PKCanvasView, context: Context) {
-        
+    func updateUIView(_ canvas: PKCanvasView, context: Context) {
+        canvas.tool = changeTool()
+    }
+    
+    func changeTool() -> PKTool {
+        return isUsingMarker
+        ? PKInkingTool(.marker, color: .black, width: 30)
+        : PKEraserTool(.bitmap, width: 50)
     }
 }
