@@ -11,6 +11,7 @@
 		4F463D8F2A2C9A45002C4198 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F463D8E2A2C9A45002C4198 /* ContentView.swift */; };
 		4F463D912A2C9A46002C4198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F463D902A2C9A46002C4198 /* Assets.xcassets */; };
 		4F463D942A2C9A46002C4198 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F463D932A2C9A46002C4198 /* Preview Assets.xcassets */; };
+		4F463D9B2A2C9B10002C4198 /* CanvasRepresentingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F463D9A2A2C9B10002C4198 /* CanvasRepresentingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		4F463D8E2A2C9A45002C4198 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4F463D902A2C9A46002C4198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F463D932A2C9A46002C4198 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F463D9A2A2C9B10002C4198 /* CanvasRepresentingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasRepresentingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				4F463D8C2A2C9A45002C4198 /* SignPadApp.swift */,
 				4F463D8E2A2C9A45002C4198 /* ContentView.swift */,
+				4F463D9A2A2C9B10002C4198 /* CanvasRepresentingView.swift */,
 				4F463D902A2C9A46002C4198 /* Assets.xcassets */,
 				4F463D922A2C9A46002C4198 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F463D9B2A2C9B10002C4198 /* CanvasRepresentingView.swift in Sources */,
 				4F463D8F2A2C9A45002C4198 /* ContentView.swift in Sources */,
 				4F463D8D2A2C9A45002C4198 /* SignPadApp.swift in Sources */,
 			);
